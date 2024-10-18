@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -8,14 +8,49 @@ import {
   Dimensions,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+import AppLoading from "expo-app-loading";
 
 const { width } = Dimensions.get("window");
-const itemWidth = (width - 60) / 3;
+const itemWidth = (width - 100) / 3;
 
 const HomePage = ({ levels, onSelectLevel, unlockedLevels }) => {
+  const [appIsReady, setAppIsReady] = useState(false);
+  const [fontsLoaded] = useFonts({
+    RiverAdventurer: require("./assets/fonts/RiverAdventurer.ttf"),
+  });
+
+  useEffect(() => {
+    async function prepare() {
+      try {
+        await SplashScreen.preventAutoHideAsync();
+        // Pre-load fonts, make any API calls you need to do here
+      } catch (e) {
+        console.warn(e);
+      } finally {
+        setAppIsReady(true);
+      }
+    }
+
+    prepare();
+  }, []);
+
+  const onLayoutRootView = useCallback(async () => {
+    if (appIsReady && fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [appIsReady, fontsLoaded]);
+
+  if (!appIsReady || !fontsLoaded) {
+    return <AppLoading />;
+  }
   return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.title}>Mizo Crossword</Text>
+    <ScrollView style={styles.container} onLayout={onLayoutRootView}>
+      <Text style={[styles.title, { fontFamily: "RiverAdventurer" }]}>
+        Mizo Crossword
+      </Text>
+
       <View style={styles.levelsContainer}>
         {levels.map((level, index) => (
           <TouchableOpacity
@@ -52,7 +87,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#f0f0f0",
   },
   title: {
-    fontSize: 28,
+    fontFamily: "RiverAdventurer",
+    fontSize: 40,
     fontWeight: "bold",
     textAlign: "center",
     marginVertical: 20,
