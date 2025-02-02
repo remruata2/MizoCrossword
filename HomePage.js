@@ -10,7 +10,6 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import AppLoading from "expo-app-loading";
 
 const { width } = Dimensions.get("window");
 const itemWidth = (width - 100) / 3;
@@ -18,7 +17,7 @@ const itemWidth = (width - 100) / 3;
 const HomePage = ({ levels, onSelectLevel, unlockedLevels }) => {
   const [appIsReady, setAppIsReady] = useState(false);
   const [fontsLoaded] = useFonts({
-    RiverAdventurer: require("./assets/fonts/RiverAdventurer.ttf"),
+    FunGames: require("./assets/fonts/FunGames.ttf"),
   });
 
   useEffect(() => {
@@ -42,42 +41,45 @@ const HomePage = ({ levels, onSelectLevel, unlockedLevels }) => {
     }
   }, [appIsReady, fontsLoaded]);
 
-  if (!appIsReady || !fontsLoaded) {
-    return <AppLoading />;
-  }
-  return (
-    <ScrollView style={styles.container} onLayout={onLayoutRootView}>
-      <Text style={[styles.title, { fontFamily: "RiverAdventurer" }]}>
-        Mizo Crossword
-      </Text>
+  useEffect(() => {
+    console.log("Fonts loaded:", fontsLoaded);
+  }, [fontsLoaded]);
 
-      <View style={styles.levelsContainer}>
-        {levels.map((level, index) => (
-          <TouchableOpacity
-            key={index}
-            style={[
-              styles.levelButton,
-              { opacity: unlockedLevels > index ? 1 : 0.5 },
-            ]}
-            onPress={() => unlockedLevels > index && onSelectLevel(index)}
-            disabled={unlockedLevels <= index}
-          >
-            <View style={styles.levelContent}>
-              <Text style={styles.levelNumber}>Level {index + 1}</Text>
-              {unlockedLevels <= index ? (
-                <Ionicons name="lock-closed" size={24} color="#fff" />
-              ) : (
-                <Ionicons name="game-controller" size={24} color="#fff" />
-              )}
-            </View>
-            <Text style={styles.levelStatus}>
-              {unlockedLevels > index ? "Play" : "Locked"}
-            </Text>
-          </TouchableOpacity>
-        ))}
-      </View>
-    </ScrollView>
-  );
+  if (!fontsLoaded || !appIsReady) {
+    return <Text>.....</Text>;
+  } else {
+    return (
+      <ScrollView style={styles.container} onLayout={onLayoutRootView}>
+        <Text style={[styles.title, styles.funGamesText]}>Mizo Crossword</Text>
+
+        <View style={styles.levelsContainer}>
+          {levels.map((level, index) => (
+            <TouchableOpacity
+              key={index}
+              style={[
+                styles.levelButton,
+                { opacity: unlockedLevels > index ? 1 : 0.5 },
+              ]}
+              onPress={() => unlockedLevels > index && onSelectLevel(index)}
+              disabled={unlockedLevels <= index}
+            >
+              <View style={styles.levelContent}>
+                <Text style={styles.levelNumber}>Level {index + 1}</Text>
+                {unlockedLevels <= index ? (
+                  <Ionicons name="lock-closed" size={24} color="#fff" />
+                ) : (
+                  <Ionicons name="game-controller" size={24} color="#fff" />
+                )}
+              </View>
+              <Text style={styles.levelStatus}>
+                {unlockedLevels > index ? "Play" : "Locked"}
+              </Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+      </ScrollView>
+    );
+  }
 };
 
 const styles = StyleSheet.create({
@@ -87,12 +89,15 @@ const styles = StyleSheet.create({
     backgroundColor: "#f0f0f0",
   },
   title: {
-    fontFamily: "RiverAdventurer",
+    fontFamily: "FunGames",
     fontSize: 40,
     fontWeight: "bold",
     textAlign: "center",
     marginVertical: 20,
     color: "#333",
+  },
+  funGamesText: {
+    fontFamily: "FunGames",
   },
   levelsContainer: {
     flexDirection: "row",

@@ -5,15 +5,17 @@ import CrosswordPuzzle from "./CrosswordPuzzle";
 import gameData from "./gameData.json";
 
 export default function App() {
-  const [currentLevel, setCurrentLevel] = useState(0);
+  const [currentLevel, setCurrentLevel] = useState(null);
   const [unlockedLevels, setUnlockedLevels] = useState(1);
 
   const handleLevelComplete = () => {
     if (currentLevel === unlockedLevels - 1) {
       setUnlockedLevels((prevUnlocked) => prevUnlocked + 1);
     }
+    console.log("Level complete!");
     setCurrentLevel(null);
   };
+  console.log("Current Level:", currentLevel);
 
   return (
     <View style={styles.container}>

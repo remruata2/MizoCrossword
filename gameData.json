@@ -53,6 +53,276 @@
           }
         ]
       }
+    },
+    {
+      "number": 2,
+      "grid": [
+        ["M", "U", "M", "A", "N", "G"],
+        ["O", "#", "#", "#", "#", "#"],
+        ["B", "A", "L", "H", "L", "A"],
+        ["I", "#", "#", "U", "#", "L"],
+        ["L", "#", "#", "N", "#", "U"],
+        ["E", "N", "G", "#", "#", "#"]
+      ],
+      "cellNumbers": [
+        { "row": 0, "col": 0, "number": 1 },
+        { "row": 2, "col": 0, "number": 2 },
+        { "row": 5, "col": 0, "number": 3 },
+        { "row": 2, "col": 3, "number": 4 },
+        { "row": 2, "col": 5, "number": 5 }
+      ],
+      "clues": {
+        "across": [
+          {
+            "number": 1,
+            "clue": "Zan laiah alo kal a, zingah a bo leh thin. (6)",
+            "answer": "MAMIT"
+          },
+          {
+            "number": 2,
+            "clue": "Thil eng, tui tak (6)",
+            "answer": "BALHLA"
+          },
+          {
+            "number": 3,
+            "clue": "Ni 1 ni-a Pathian thil siam (3)",
+            "answer": "ENG"
+          }
+        ],
+        "down": [
+          {
+            "number": 1,
+            "clue": "A tel lovin kan awm thei lova, kan tel lovin a dam thei lo (6)",
+            "answer": "MOBILE"
+          },
+          {
+            "number": 4,
+            "clue": "A ding ve ngailo, a kal reng zel (3)",
+            "answer": "HUN"
+          },
+          {
+            "number": 5,
+            "clue": "Chawhmeh chi khat (3)",
+            "answer": "ALU"
+          }
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "grid": [
+        ["M", "U", "M", "A", "N", "G"],
+        ["O", "#", "#", "#", "#", "#"],
+        ["B", "A", "L", "H", "L", "A"],
+        ["I", "#", "#", "U", "#", "L"],
+        ["L", "#", "#", "N", "#", "U"],
+        ["E", "N", "G", "#", "#", "#"]
+      ],
+      "cellNumbers": [
+        { "row": 0, "col": 0, "number": 1 },
+        { "row": 2, "col": 0, "number": 2 },
+        { "row": 5, "col": 0, "number": 3 },
+        { "row": 2, "col": 3, "number": 4 },
+        { "row": 2, "col": 5, "number": 5 }
+      ],
+      "clues": {
+        "across": [
+          {
+            "number": 1,
+            "clue": "Zan laiah alo kal a, zingah a bo leh thin. (6)",
+            "answer": "MAMIT"
+          },
+          {
+            "number": 2,
+            "clue": "Thil eng, tui tak (6)",
+            "answer": "BALHLA"
+          },
+          {
+            "number": 3,
+            "clue": "Ni 1 ni-a Pathian thil siam (3)",
+            "answer": "ENG"
+          }
+        ],
+        "down": [
+          {
+            "number": 1,
+            "clue": "A tel lovin kan awm thei lova, kan tel lovin a dam thei lo (6)",
+            "answer": "MOBILE"
+          },
+          {
+            "number": 4,
+            "clue": "A ding ve ngailo, a kal reng zel (3)",
+            "answer": "HUN"
+          },
+          {
+            "number": 5,
+            "clue": "Chawhmeh chi khat (3)",
+            "answer": "ALU"
+          }
+        ]
+      }
+    },
+    {
+      "number": 4,
+      "grid": [
+        ["M", "U", "M", "A", "N", "G"],
+        ["O", "#", "#", "#", "#", "#"],
+        ["B", "A", "L", "H", "L", "A"],
+        ["I", "#", "#", "U", "#", "L"],
+        ["L", "#", "#", "N", "#", "U"],
+        ["E", "N", "G", "#", "#", "#"]
+      ],
+      "cellNumbers": [
+        { "row": 0, "col": 0, "number": 1 },
+        { "row": 2, "col": 0, "number": 2 },
+        { "row": 5, "col": 0, "number": 3 },
+        { "row": 2, "col": 3, "number": 4 },
+        { "row": 2, "col": 5, "number": 5 }
+      ],
+      "clues": {
+        "across": [
+          {
+            "number": 1,
+            "clue": "Zan laiah alo kal a, zingah a bo leh thin. (6)",
+            "answer": "MAMIT"
+          },
+          {
+            "number": 2,
+            "clue": "Thil eng, tui tak (6)",
+            "answer": "BALHLA"
+          },
+          {
+            "number": 3,
+            "clue": "Ni 1 ni-a Pathian thil siam (3)",
+            "answer": "ENG"
+          }
+        ],
+        "down": [
+          {
+            "number": 1,
+            "clue": "A tel lovin kan awm thei lova, kan tel lovin a dam thei lo (6)",
+            "answer": "MOBILE"
+          },
+          {
+            "number": 4,
+            "clue": "A ding ve ngailo, a kal reng zel (3)",
+            "answer": "HUN"
+          },
+          {
+            "number": 5,
+            "clue": "Chawhmeh chi khat (3)",
+            "answer": "ALU"
+          }
+        ]
+      }
+    },
+    {
+      "number": 5,
+      "grid": [
+        ["M", "U", "M", "A", "N", "G"],
+        ["O", "#", "#", "#", "#", "#"],
+        ["B", "A", "L", "H", "L", "A"],
+        ["I", "#", "#", "U", "#", "L"],
+        ["L", "#", "#", "N", "#", "U"],
+        ["E", "N", "G", "#", "#", "#"]
+      ],
+      "cellNumbers": [
+        { "row": 0, "col": 0, "number": 1 },
+        { "row": 2, "col": 0, "number": 2 },
+        { "row": 5, "col": 0, "number": 3 },
+        { "row": 2, "col": 3, "number": 4 },
+        { "row": 2, "col": 5, "number": 5 }
+      ],
+      "clues": {
+        "across": [
+          {
+            "number": 1,
+            "clue": "Zan laiah alo kal a, zingah a bo leh thin. (6)",
+            "answer": "MAMIT"
+          },
+          {
+            "number": 2,
+            "clue": "Thil eng, tui tak (6)",
+            "answer": "BALHLA"
+          },
+          {
+            "number": 3,
+            "clue": "Ni 1 ni-a Pathian thil siam (3)",
+            "answer": "ENG"
+          }
+        ],
+        "down": [
+          {
+            "number": 1,
+            "clue": "A tel lovin kan awm thei lova, kan tel lovin a dam thei lo (6)",
+            "answer": "MOBILE"
+          },
+          {
+            "number": 4,
+            "clue": "A ding ve ngailo, a kal reng zel (3)",
+            "answer": "HUN"
+          },
+          {
+            "number": 5,
+            "clue": "Chawhmeh chi khat (3)",
+            "answer": "ALU"
+          }
+        ]
+      }
+    },
+    {
+      "number": 6,
+      "grid": [
+        ["M", "U", "M", "A", "N", "G"],
+        ["O", "#", "#", "#", "#", "#"],
+        ["B", "A", "L", "H", "L", "A"],
+        ["I", "#", "#", "U", "#", "L"],
+        ["L", "#", "#", "N", "#", "U"],
+        ["E", "N", "G", "#", "#", "#"]
+      ],
+      "cellNumbers": [
+        { "row": 0, "col": 0, "number": 1 },
+        { "row": 2, "col": 0, "number": 2 },
+        { "row": 5, "col": 0, "number": 3 },
+        { "row": 2, "col": 3, "number": 4 },
+        { "row": 2, "col": 5, "number": 5 }
+      ],
+      "clues": {
+        "across": [
+          {
+            "number": 1,
+            "clue": "Zan laiah alo kal a, zingah a bo leh thin. (6)",
+            "answer": "MAMIT"
+          },
+          {
+            "number": 2,
+            "clue": "Thil eng, tui tak (6)",
+            "answer": "BALHLA"
+          },
+          {
+            "number": 3,
+            "clue": "Ni 1 ni-a Pathian thil siam (3)",
+            "answer": "ENG"
+          }
+        ],
+        "down": [
+          {
+            "number": 1,
+            "clue": "A tel lovin kan awm thei lova, kan tel lovin a dam thei lo (6)",
+            "answer": "MOBILE"
+          },
+          {
+            "number": 4,
+            "clue": "A ding ve ngailo, a kal reng zel (3)",
+            "answer": "HUN"
+          },
+          {
+            "number": 5,
+            "clue": "Chawhmeh chi khat (3)",
+            "answer": "ALU"
+          }
+        ]
+      }
     }
   ]
 }
